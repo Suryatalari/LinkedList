@@ -173,7 +173,7 @@ rest_api.get('/ATM_Linkedlist', function(request, response){
 
   //Checking if the entered values are numbers.
   if(isNaN(account_id) || !isNaN(account_name)){
-    response.send("Please check if id is number and also check if name is characters only");
+    response.send("Please check if id is number and also check if name has characters only");
   }
 
   //store result from search_account function.
@@ -185,7 +185,7 @@ rest_api.get('/ATM_Linkedlist', function(request, response){
   }
   // If account details are not present.
   else{
-    response.send("Please varify Account name and Account id. If you want to add new account details." +
+    response.send("Please verify Account name and Account id. If you want to add new account details." +
     "Please enter account holders name, id and deposit in this URL. http://localhost:3000/ATM_Linkedlist_newaddition?account_name=abc&account_id=x&account_deposit=y");
   }
 })
@@ -200,7 +200,7 @@ rest_api.get('/ATM_Linkedlist_newaddition', function(request, response){
 
   //Checking if the entered values are numbers and characters.
   if(isNaN(account_id) || isNaN(account_deposit) || !isNaN(account_name)){
-    response.send("Please check if id and deposit are numbers and also check if name is characters only");
+    response.send("Please check if id and deposit are numbers and also check if name has characters only");
   }
   //Using search method to find account information using id and name.
   account.search_account(account_id,account_name);
