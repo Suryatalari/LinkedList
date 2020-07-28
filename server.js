@@ -82,7 +82,7 @@ rest_api.get('/ATM', function(request, response){
 //Please enter name instead of "abc" and id instead of "a"
 
 /*
-The main principle of Linked list is sequential access in memory, unlike direct access of memory used in 
+The main principle of Linked list is sequential access of memory, unlike direct access of memory used in 
 array. Linked list has nodes that can be stored anywhere in memory. so, adding and removing elements from 
 linked list is much faster and efficient. A doubly linked list is used to point to the element previous and 
 after each node. Adding elements is much faster, since, elements are stored anywhere in the memory and pointers 
